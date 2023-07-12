@@ -28,7 +28,7 @@ CREATE TABLE album(
 CREATE TABLE cancao(
   cancao_id INT PRIMARY KEY AUTO_INCREMENT,
   nome_cancao VARCHAR(100) NOT NULL,
-  duracao_segundos SMALLINT NOT NULL,
+  duracao_segundos INT NOT NULL,
   album_id INT NOT NULL,
   FOREIGN KEY (album_id) REFERENCES album(album_id)
 ) engine = InnoDB;
@@ -124,7 +124,7 @@ VALUES
   (1, 2, '2020-05-02 05:30:35'),
   (1, 10, '2020-03-06 11:22:33'),
   (2, 10, '2022-08-05 08:05:17'),
-  (2, 4, '2020-01-02 07:40:33'),
+  (2, 7, '2020-01-02 07:40:33'),
   (3, 10, '2020-11-13 16:55:13'),
   (3, 2, '2020-12-05 18:38:30'),
   (4, 8, '2021-08-15 17:10:10'),
